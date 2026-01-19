@@ -1,25 +1,36 @@
-# OS файлы
-.DS_Store
-Thumbs.db
-.vscode
-.idea
+# IDE
+.vscode/
+.idea/
 *.swp
 *.swo
 *~
-.env.local
-.env.*.local
+.DS_Store
+Thumbs.db
 
-# Node modules
+# Cursor
+.cursor/
+.cursorignore
+
+# Node/npm
 node_modules/
 npm-debug.log
 yarn-error.log
-
-# Пакетные манейджеры
 package-lock.json
 yarn.lock
-composer.lock
 
-# Logs
+# WordPress
+wp-config.php
+!wp-config-example.php
+/wp-content/plugins/*
+!/wp-content/plugins/.gitkeep
+/wp-content/themes/*
+!/wp-content/themes/.gitkeep
+/wp-content/uploads/
+wp-content/backup-*
+wp-content/cache/
+.htaccess
+
+# Почта и логи
 *.log
 logs/
 
@@ -28,39 +39,12 @@ logs/
 *.temp
 .cache/
 
-# WordPress стаэц-специфика (если репозиторий когда-то включит WordPress)
-wp-config.php
-!wp-config-example.php
-wp-content/plugins/
-wp-content/themes/
-wp-content/uploads/
-wp-content/backup/
-.htaccess
-
-# Недопустимые креденциалы
+# Креденциалы
 .env
-.env.production
+.env.local
+.env.*.local
 secrets.json
-config.json
-.credentials
 
-# Backup и резервные копии
-*.backup
-*.sql
-*.sql.gz
-*.tar.gz
-backups/
-
-# Build выпуски
-dist/
-build/
-.next/
-out/
-
-# Тестовые файлы
-coverage/
-*.test.js
-
-# Docker
-.dockerignore
-docker-compose.override.yml
+# Ос специфика
+.DS_Store
+Thumbs.db
