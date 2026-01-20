@@ -7,6 +7,10 @@
 - **goroshki.ru** — основной домен (лендинг)
 - **shop.goroshki.ru** — поддомен (магазин)
 
+## Внешнее хранилище файлов
+
+https://disk.360.yandex.ru/client/disk/%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B/Goroshki
+
 ## Технология
 
 - **goroshki.ru** — HTML, CSS, JavaScript
