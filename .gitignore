@@ -18,17 +18,45 @@ yarn-error.log
 package-lock.json
 yarn.lock
 
-# WordPress
-wp-config.php
-!wp-config-example.php
-/wp-content/plugins/*
-!/wp-content/plugins/.gitkeep
-/wp-content/themes/*
-!/wp-content/themes/.gitkeep
-/wp-content/uploads/
-wp-content/backup-*
-wp-content/cache/
-.htaccess
+# ============================================================
+# WordPress + WooCommerce
+# ============================================================
+# Локальные конфиги (с паролями БД)
+/shop/wp-config.php
+/shop/wp-config-local.php
+!shop/wp-config-sample.php
+
+# WordPress ядро (не версионируем)
+/shop/wp-*.php
+/shop/index.php
+/shop/xmlrpc.php
+/shop/wp-load.php
+/shop/wp-mail.php
+/shop/license.txt
+/shop/readme.html
+
+# Загруженные файлы пользователей
+/shop/wp-content/uploads/
+/shop/wp-content/upgrade/
+
+# Кэш и временные файлы
+/shop/wp-content/cache/
+/shop/wp-content/backup-*
+/shop/wp-content/backups/
+/shop/wp-content/ai1wm-backups/
+
+# Плагины (НЕ версионируем - устанавливаются через wp-cli)
+/shop/wp-content/plugins/
+!/shop/wp-content/plugins/.gitkeep
+
+# Темы (НЕ версионируем стандартные темы)
+/shop/wp-content/themes/
+!/shop/wp-content/themes/.gitkeep
+# Если есть кастомная тема, добавьте исключение:
+# !/shop/wp-content/themes/custom-theme/
+
+# .htaccess WordPress
+/shop/.htaccess
 
 # Почта и логи
 *.log
