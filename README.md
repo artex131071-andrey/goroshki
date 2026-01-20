@@ -24,3 +24,12 @@
 git clone https://github.com/artex131071-andrey/goroshki.git
 cd goroshki
 ```
+## Шаблон
+
+Оразец https://websitedemos.net/clothing-store-02/?customize=template
+
+## VPS 
+доступ на VPS продакшен-сервер Beget:
+Подключение: ssh root@194.156.116.135
+Внешний IP: 194.156.116.135
+
