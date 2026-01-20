@@ -26,7 +26,7 @@ cd goroshki
 ```
 ## Шаблон
 
-Оразец https://websitedemos.net/clothing-store-02/?customize=template
+Оразец шаблона сайта https://websitedemos.net/clothing-store-02/?customize=template
 
 ## VPS 
 доступ на VPS продакшен-сервер Beget:
